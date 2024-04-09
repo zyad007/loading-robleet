@@ -1,11 +1,10 @@
 .circles {
-  height: 90vmin;
+  height: 100vmin;
   position: relative;
-  width: 90vmin;
+  width: 100%;
 
   >div {
     animation: growAndFade 4s infinite ease-out;
-    background-color: #b6a057;
     border-radius: 50%;
     height: 100%;
     opacity: 0;
@@ -14,49 +13,33 @@
   }
 
   .circle1 {
-    animation-delay: 1s;
+    animation-delay: 0.2s;
   }
   .circle2 {
-    animation-delay: 2s;
+    animation-delay: 0.8s;
   }
 
   .circle3 {
-    animation-delay: 3s;
+    animation-delay: 1.4s;
   }
-
-}
-
-.images {
-  height: 90vmin;
-  position: absolute;
-  width: 90vmin;
-
-  >img {
-    animation: growAndFade2 3s infinite ease-out;
-    opacity: 0;
-    position: absolute;
-  }
-
-  .image1 {
-    animation-delay: 1s;
-  }
-
-  .image2 {
+  .circle4 {
     animation-delay: 2s;
   }
-
-  .image3 {
-    animation-delay: 3s;
+  .circle5 {
+    animation-delay: 2.6s;
   }
-
-  .image4 {
+  .circle6 {
+    animation-delay: 3.4s;
+  }
+  .circle7 {
     animation-delay: 4s;
   }
+
 }
 
 @keyframes growAndFade {
   0% {
-    opacity: .35;
+    opacity: 1;
     transform: scale(0);
   }
 
@@ -82,7 +65,7 @@ body {
   height: 100vh;
   justify-content: center;
   margin: 0;
-  background: #171717;
+  background: #000;
 }
 
 .object {

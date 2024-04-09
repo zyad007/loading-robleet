@@ -28,10 +28,19 @@ function App() {
           <img className='w-40 absolute right-10 bottom-10' src="../public/rank.png" alt="" />
         </div>
         <div class="circle3">
-          <img className='w-40 absolute top-10 left-10' src="../public/xp.png" alt="" />
+          <img className='w-40 absolute top-10 left-1/2' src="../public/xp.png" alt="" />
         </div>
         <div class="circle4">
           <img className='absolute bottom-10 left-10 w-40' src="https://robleet.com/assets/assets/drawer/fire.svg" alt="" />
+        </div>
+        <div class="circle5">
+          <img className='absolute top-1/2 left-10 w-40' src="../public/lightning.png" alt="" />
+        </div>
+        <div class="circle6">
+          <img className='w-40 absolute top-10 left-10' src="../public/star.png" alt="" />
+        </div>
+        <div class="circle7">
+          <img className='w-40 absolute right-[40%] bottom-10' src="https://robleet.com/assets/assets/images/robux.svg" alt="" />
         </div>
       </div>
       <div className='absolute top-0 w-full h-full flex justify-center items-center'>
