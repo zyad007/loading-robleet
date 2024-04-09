@@ -1,73 +1,103 @@
 .circles {
-    height: 90vmin;
-    position: relative;
-    width: 90vmin;
-    
-    > div {
-      animation: growAndFade 8s infinite ease-out;
-      background-color: #b6a057;
-      border-radius: 50%;
-      height: 100%;
-      opacity: 0;
-      position: absolute;
-      width: 100%;
-    }
-    
-    .circle1 {
-      animation-delay: 1s;    
-    }
-    .circle2 {
-      animation-delay: 2s; 
-    }
-    .circle3 {
-      animation-delay: 3s;
-    }
-    .circle4 {
-      animation-delay: 4s;
-    }
-    .circle5 {
-      animation-delay: 5s;    
-    }
-    .circle6 {
-      animation-delay: 6s; 
-    }
-    .circle7 {
-      animation-delay: 7s;
-    }
-    .circle8 {
-      animation-delay: 8s;
-    }
+  height: 90vmin;
+  position: relative;
+  width: 90vmin;
+
+  >div {
+    animation: growAndFade 4s infinite ease-out;
+    background-color: #b6a057;
+    border-radius: 50%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
   }
-  
-  @keyframes growAndFade {
-    0% {
-      opacity: .35;
-      transform: scale(0);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(1);
-    }
+
+  .circle1 {
+    animation-delay: 1s;
   }
-  
-  body {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    margin: 0;
-    background: #171717;
+
+  .circle2 {
+    animation-delay: 2s;
   }
-  .object {
-    animation: MoveUpDown 1s linear infinite;
+
+  .circle3 {
+    animation-delay: 3s;
+  }
+
+}
+
+.images {
+  height: 90vmin;
+  position: absolute;
+  width: 90vmin;
+
+  >img {
+    animation: growAndFade2 3s infinite ease-out;
+    opacity: 0;
     position: absolute;
   }
-  
-  @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 100px;
-    }
+
+  .image1 {
+    animation-delay: 1s;
   }
+
+  .image2 {
+    animation-delay: 2s;
+  }
+
+  .image3 {
+    animation-delay: 3s;
+  }
+
+  .image4 {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes growAndFade {
+  0% {
+    opacity: .35;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes growAndFade2 {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  background: #171717;
+}
+
+.object {
+  animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes MoveUpDown {
+
+  0%,
+  100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+}
