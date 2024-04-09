@@ -17,7 +17,7 @@ function App() {
           maxSize={1.4}
           particleDensity={100}
           className="w-full h-full"
-          particleColor="#ffd754"
+          particleColor="#fff"
         />
       </div>
       <div class="loadings left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
