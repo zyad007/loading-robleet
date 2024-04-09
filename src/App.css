@@ -4,8 +4,8 @@
     width: 90vmin;
     
     > div {
-      animation: growAndFade 3s infinite ease-out;
-      background-color: dodgerblue;
+      animation: growAndFade 8s infinite ease-out;
+      background-color: #b6a057;
       border-radius: 50%;
       height: 100%;
       opacity: 0;
@@ -22,11 +22,26 @@
     .circle3 {
       animation-delay: 3s;
     }
+    .circle4 {
+      animation-delay: 4s;
+    }
+    .circle5 {
+      animation-delay: 5s;    
+    }
+    .circle6 {
+      animation-delay: 6s; 
+    }
+    .circle7 {
+      animation-delay: 7s;
+    }
+    .circle8 {
+      animation-delay: 8s;
+    }
   }
   
   @keyframes growAndFade {
     0% {
-      opacity: .25;
+      opacity: .35;
       transform: scale(0);
     }
     100% {
@@ -41,4 +56,18 @@
     height: 100vh;
     justify-content: center;
     margin: 0;
+    background: #171717;
+  }
+  .object {
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
   }
