@@ -37,13 +37,13 @@ export default function Tip() {
         setTipTitle(tips[randomIndex].title)
     }
     useEffect(() => {
-        setTimeout(changeTip, 20000)
+        setTimeout(changeTip, 5000)
     }, [tipText])
     useEffect(() => {
         changeTip()
     }, [])
     return (
-        <div className='absolute top-2/3 text-white text-xl flex items-center'>
+        <div className='absolute top-2/3 text-white text-xl flex items-center font-Bai'>
             <img className='w-12 m-2' src={tipImage} alt="" />
             <div>{tipText}</div>
         </div>
