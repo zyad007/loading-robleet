@@ -6,6 +6,6 @@ import Loading2 from './components/Loading2.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Loading2 />
+    <App />
   </React.StrictMode>,
 )

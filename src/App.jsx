@@ -8,7 +8,7 @@ import Tip from './components/Tip'
 function App() {
   
   return (
-    <div className='w-screen'>
+    <div className='w-screen overflow-x-hidden'>
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
           id="tsparticlesfullpage"
